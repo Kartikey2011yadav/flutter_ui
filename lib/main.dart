@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.blue,
+        appBar: AppBar(),
         body: Center(
           child: Container(
             height: 300,
