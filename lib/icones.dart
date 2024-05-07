@@ -1,14 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'TextField.dart';
-import 'icones.dart';
-
-void main() {
-  runApp(const icones_());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class icones_ extends StatelessWidget {
+  const icones_({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +9,6 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.blue,
-        appBar: AppBar(),
         body: Center(
           child: Container(
             height: 300,
@@ -26,14 +18,10 @@ class MyApp extends StatelessWidget {
               borderRadius: BorderRadius.circular(25),
             ),
             padding: const EdgeInsets.all(90),
-            child: const Text(
-              "Hello this is a text ",
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 25,
-                fontWeight: FontWeight.bold,
-              ),
+            child: const Icon(
+              Icons.home_filled,
+              size: 50,
+              color: Colors.white,
             ),
           ),
         ),
@@ -41,5 +29,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-
