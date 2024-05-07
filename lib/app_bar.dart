@@ -1,23 +1,17 @@
 import 'package:flutter/material.dart';
 
-import 'TextField.dart';
-import 'app_bar.dart';
-import 'icons.dart';
-
-void main() {
-  runApp(const app_bar());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class app_bar extends StatelessWidget {
+  const app_bar({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.blue,
-        appBar: AppBar(),
+        backgroundColor: Colors.white10,
+        appBar: AppBar(
+          backgroundColor: Colors.lightBlue,
+        ),
         body: Center(
           child: Container(
             height: 300,
@@ -27,14 +21,10 @@ class MyApp extends StatelessWidget {
               borderRadius: BorderRadius.circular(25),
             ),
             padding: const EdgeInsets.all(90),
-            child: const Text(
-              "Hello this is a text ",
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 25,
-                fontWeight: FontWeight.bold,
-              ),
+            child: const Icon(
+              Icons.favorite,
+              size: 50,
+              color: Colors.white,
             ),
           ),
         ),
@@ -42,5 +32,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-
