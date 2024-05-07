@@ -8,9 +8,17 @@ class app_bar extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.white10,
+        backgroundColor: Colors.white,
         appBar: AppBar(
           backgroundColor: Colors.lightBlue,
+          elevation: 0,
+          centerTitle: true,
+          title: const Text("App Bar",
+          textAlign: TextAlign.right),
+          leading: const Icon(Icons.menu_outlined),
+          actions: [
+            IconButton(onPressed: () {}, icon: const Icon(Icons.login)),
+          ],
         ),
         body: Center(
           child: Container(
