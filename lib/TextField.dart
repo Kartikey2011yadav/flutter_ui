@@ -9,9 +9,6 @@ class TextField_ extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.blue,
-        appBar: AppBar(
-          backgroundColor: Colors.deepPurple,
-        ),
         body: Center(
           child: Container(
             height: 300,
