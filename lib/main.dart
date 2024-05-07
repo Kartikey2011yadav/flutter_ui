@@ -3,9 +3,10 @@ import 'package:flutter/material.dart';
 import 'TextField.dart';
 import 'app_bar.dart';
 import 'icons.dart';
+import 'column.dart';
 
 void main() {
-  runApp(const app_bar());
+  runApp(const column());
 }
 
 class MyApp extends StatelessWidget {
