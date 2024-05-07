@@ -21,15 +21,18 @@ class column extends StatelessWidget {
           ],
         ),
         body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
               height: 200,
               width: 300,
               color: Colors.deepPurple ,
+              child: const Icon(Icons.account_tree,),
             ),
             Container(
               height: 200,
-              width: 300,
+              width: 400,
               color: Colors.indigo ,
             ),
             Container(
