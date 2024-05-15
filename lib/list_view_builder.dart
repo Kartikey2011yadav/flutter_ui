@@ -28,7 +28,9 @@ class list_view_builder extends StatelessWidget {
         body: ListView.builder(
           itemCount: newList.length,
           itemBuilder: (context, index) => ListTile(
-            title: Text(newList[index]),
+            title: Container(
+              color: Colors.lightBlue[((index % 9)+1)*100],
+              child: Text(newList[index])),
           ),
         ),
       ),
