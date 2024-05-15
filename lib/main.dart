@@ -9,7 +9,7 @@ import 'list_view.dart';
 import 'list_view_builder.dart';
 
 void main() {
-  runApp(const list_view_builder());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -21,7 +21,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.blue,
-        appBar: AppBar(),
+        appBar: AppBar(
+          backgroundColor: Colors.indigoAccent,
+        ),
         body: Center(
           child: Container(
             height: 300,
