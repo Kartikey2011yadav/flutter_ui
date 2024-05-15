@@ -9,7 +9,7 @@ import 'list_view.dart';
 import 'list_view_builder.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(list_view_builder());
 }
 
 class MyApp extends StatelessWidget {
