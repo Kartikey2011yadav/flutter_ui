@@ -4,9 +4,10 @@ import 'TextField.dart';
 import 'app_bar.dart';
 import 'icons.dart';
 import 'column.dart';
+import 'expanded.dart';
 
 void main() {
-  runApp(const column());
+  runApp(const expanded());
 }
 
 class MyApp extends StatelessWidget {
