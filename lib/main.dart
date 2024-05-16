@@ -9,9 +9,10 @@ import 'list_view.dart';
 import 'list_view_builder.dart';
 import 'grid_view.dart';
 import 'ListViewExample.dart';
+import 'grid_view _builder.dart';
 
 void main() {
-  runApp(ListViewExample());
+  runApp(grid_view_builder());
 }
 
 class MyApp extends StatelessWidget {
