@@ -7,9 +7,10 @@ import 'column.dart';
 import 'expanded.dart';
 import 'list_view.dart';
 import 'list_view_builder.dart';
+import 'grid_view.dart';
 
 void main() {
-  runApp(list_view_builder());
+  runApp(grid_view());
 }
 
 class MyApp extends StatelessWidget {
