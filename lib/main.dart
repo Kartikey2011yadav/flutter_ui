@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'Page.dart';
 
+import 'routes.dart';
+import 'Page.dart';
 import 'text_field.dart';
 import 'app_bar.dart';
 import 'icons.dart';
@@ -16,7 +17,7 @@ import 'gesture.dart';
 import 'page_First.dart';
 
 void main() {
-  runApp(const FirstPage());
+  runApp(const Routes());
 }
 
 class MyApp extends StatelessWidget {
