@@ -19,7 +19,7 @@ class NavigationSettings extends StatelessWidget {
           children: [
             const DrawerHeader(
                 child: Icon(
-              Icons.home,
+              Icons.settings,
               size: 48,
             )),
             ListTile(
@@ -48,6 +48,26 @@ class NavigationSettings extends StatelessWidget {
             ),
           ],
         ),
+      ),
+      body: const Center(
+        child: Text("Settings Page"),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.lightBlueAccent[100],
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: "Profile",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: "Home",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings),
+            label: "Settings",
+          ),
+        ],
       ),
     );
   }

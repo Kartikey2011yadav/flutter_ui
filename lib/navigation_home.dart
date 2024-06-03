@@ -11,8 +11,8 @@ class NavigationEx extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         '/home': (context) =>  NavigationHome(),
-        '/settings': (context) =>  NavigationSettings(),
-        '/profile': (context) =>  NavigationProfile(),
+        '/settings': (context) =>  const NavigationSettings(),
+        '/profile': (context) =>  const NavigationProfile(),
       },
       home:  NavigationHome(),
     );
@@ -20,13 +20,13 @@ class NavigationEx extends StatelessWidget {
 }
 
 class NavigationHome extends StatelessWidget {
-  final List _pages =[
-    NavigationHome(),
-    NavigationSettings(),
-    NavigationProfile(),
+    NavigationHome({super.key});
 
-  ];
-   NavigationHome({super.key});
+    int _selectedIndex = 0;
+
+   void _navigate (int index){
+     // Navigator.pushNamed(context, _routes[index]);
+   }
 
   @override
   Widget build(BuildContext context) {
@@ -71,8 +71,13 @@ class NavigationHome extends StatelessWidget {
           ],
         ),
       ),
+      body: const Center(
+        child: Text("Home Page"),
+      ),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.lightBlueAccent[100],
+        currentIndex: _selectedIndex,
+        onTap: _navigate,
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
