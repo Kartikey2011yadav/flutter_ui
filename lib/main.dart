@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui/navigation_home.dart';
 
+import 'bottom_navigationbar.dart';
 import 'routes.dart';
 import 'Page.dart';
 import 'text_field.dart';
@@ -17,9 +18,7 @@ import 'stack.dart';
 import 'gesture.dart';
 import 'page_First.dart';
 
-void main() {
-  runApp(const NavigationEx());
-}
+void main() => runApp(const NavigationBarApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
