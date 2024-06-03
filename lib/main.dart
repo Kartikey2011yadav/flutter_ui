@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui/navigation_home.dart';
 
 import 'routes.dart';
 import 'Page.dart';
@@ -17,7 +18,7 @@ import 'gesture.dart';
 import 'page_First.dart';
 
 void main() {
-  runApp(const Routes());
+  runApp(const NavigationEx());
 }
 
 class MyApp extends StatelessWidget {
